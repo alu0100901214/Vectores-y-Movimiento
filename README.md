@@ -39,7 +39,7 @@ Sin embargo, al usar desde el script el vector normalizado (goal.normalized) sol
  ### A) Ninguno de los objetos es físico.
   -> Los objetos permanecen estáticos al no verse afectados por ninguna física.
  
- ![img](./img/A.png)
+ ![img](./img/A.PNG)
  
  ### B) Las esfera tiene físicas, el cubo no, pero se puede mover por el controlador en 3ª persona de los starter Assets.
   -> 
@@ -47,22 +47,22 @@ Sin embargo, al usar desde el script el vector normalizado (goal.normalized) sol
  ![gif](./GIF/B.gif)
  
  ### C) Las esferas y el cubo tienen físicas. El cubo inicialmente está posicionado más alto que alguna de las esferas, con el mismo valor de x, z.
-  -> 
+  -> Colocando el cubo encima de la esfera ambos con el componente Rigidbody, se produce una colisión donde el cubo termina cayendo por un lado y golpeando a la esfera.
  
  ![gif](./GIF/C.gif)
  
   ### D) Una escena similar a la c, pero alguna esfera tiene 10 veces la masa del cubo.
-  -> 
+  -> Esta vez, la esfera tiene una masa de 10 y el cubo una masa de 1, por lo tanto cuando el cubo cae sobre la esfera, esta apenas se mueve del sitio.
  
  ![img](./img/D.png)
  
   ### E) Las esferas tienen físicas y el cubo es de tipo IsTrigger estático.
-  -> 
+  -> Al activar el isTrigger del cubo, este posee las físicas del rigidBody, pero ya no es afectado por el resto de objetos y los atraviesa. La intención del isTrigger   aqui es para que se use como detector de colisiones con otros objetos.
  
  ![img](./img/E.png)
  
   ### F) Las esferas tienen físicas, el cubo es de tipo IsTrigger y cinemático.
-  -> 
+  -> Al activar is Kinematic, el cubo ya no es afectado por ninguna de las físicas a pesar de tener un rigidBody, el objeto solo se podra mover con el uso de un      script.
  
  ![img](./img/F.png)
  
@@ -72,6 +72,6 @@ Sin embargo, al usar desde el script el vector normalizado (goal.normalized) sol
  ![img](./img/G.png)
  
   ### H) Una esfera y el cubo son físicos y la esfera tiene 10 veces la masa del cubo, se impide la rotación del cubo sobre el plano XZ.
-  -> 
+  -> Al bloquear las rotaciones en el plano XZ, el cubo se mantiene sobre la esfera y no puede caerse al no poder rotar.
  
  ![img](./img/H.png)
