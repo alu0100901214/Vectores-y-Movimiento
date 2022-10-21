@@ -54,24 +54,24 @@ Sin embargo, al usar desde el script el vector normalizado (goal.normalized) sol
   ### D) Una escena similar a la c, pero alguna esfera tiene 10 veces la masa del cubo.
   -> Esta vez, la esfera tiene una masa de 10 y el cubo una masa de 1, por lo tanto cuando el cubo cae sobre la esfera, esta apenas se mueve del sitio.
  
- ![img](./img/D.png)
+ ![gif](./GIF/D.gif)
  
   ### E) Las esferas tienen físicas y el cubo es de tipo IsTrigger estático.
   -> Al activar el isTrigger del cubo, este posee las físicas del rigidBody, pero ya no es afectado por el resto de objetos y los atraviesa. La intención del isTrigger   aqui es para que se use como detector de colisiones con otros objetos.
  
- ![img](./img/E.png)
+ ![gif](./GIF/E.gif)
  
   ### F) Las esferas tienen físicas, el cubo es de tipo IsTrigger y cinemático.
   -> Al activar is Kinematic, el cubo ya no es afectado por ninguna de las físicas a pesar de tener un rigidBody, el objeto solo se podra mover con el uso de un      script.
  
- ![img](./img/F.png)
+ ![gif](./GIF/F.gif)
  
   ### G) Las esferas tienen físicas, el cubo es de tipo IsTrigger y mecánico.
   -> 
  
- ![img](./img/G.png)
+ ![gif](./GIF/G.gif)
  
   ### H) Una esfera y el cubo son físicos y la esfera tiene 10 veces la masa del cubo, se impide la rotación del cubo sobre el plano XZ.
   -> Al bloquear las rotaciones en el plano XZ, el cubo se mantiene sobre la esfera y no puede caerse al no poder rotar.
  
- ![img](./img/H.png)
+ ![gif](./GIF/H.gif)
