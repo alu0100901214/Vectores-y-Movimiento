@@ -36,6 +36,42 @@ Sin embargo, al usar desde el script el vector normalizado (goal.normalized) sol
  
  ## Ejercicio 8
  
- A) Ninguno de los objetos es físico.
+ ### A) Ninguno de los objetos es físico.
+  -> Los objetos permanecen estáticos al no verse afectados por ninguna física.
  
- ![img](./img/a.png)
+ ![img](./img/A.png)
+ 
+ ### B) Las esfera tiene físicas, el cubo no, pero se puede mover por el controlador en 3ª persona de los starter Assets.
+  -> 
+ 
+ ![gif](./GIF/B.gif)
+ 
+ ### C) Las esferas y el cubo tienen físicas. El cubo inicialmente está posicionado más alto que alguna de las esferas, con el mismo valor de x, z.
+  -> 
+ 
+ ![gif](./GIF/C.gif)
+ 
+  ### D) Una escena similar a la c, pero alguna esfera tiene 10 veces la masa del cubo.
+  -> 
+ 
+ ![img](./img/D.png)
+ 
+  ### E) Las esferas tienen físicas y el cubo es de tipo IsTrigger estático.
+  -> 
+ 
+ ![img](./img/E.png)
+ 
+  ### F) Las esferas tienen físicas, el cubo es de tipo IsTrigger y cinemático.
+  -> 
+ 
+ ![img](./img/F.png)
+ 
+  ### G) Las esferas tienen físicas, el cubo es de tipo IsTrigger y mecánico.
+  -> 
+ 
+ ![img](./img/G.png)
+ 
+  ### H) Una esfera y el cubo son físicos y la esfera tiene 10 veces la masa del cubo, se impide la rotación del cubo sobre el plano XZ.
+  -> 
+ 
+ ![img](./img/H.png)
