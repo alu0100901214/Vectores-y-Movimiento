@@ -36,4 +36,6 @@ Sin embargo, al usar desde el script el vector normalizado (goal.normalized) sol
  
  ## Ejercicio 8
  
+ A) Ninguno de los objetos es físico.
  
+ ![img](./img/a.png)
