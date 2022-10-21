@@ -5,11 +5,11 @@
 
 En un ejemplo donde la coordenada del Vector en el eje Y es 1 (0,1,0) el objeto se impulsa hacia arriba pero cae debido a la gravedad que le otorga el componente "Rigidbody":
 
-![gif](./GIF/conGravedad.GIF)
+![gif](./GIF/conGravedad.gif)
 
 Para lograr que el objeto salga volando, podemos desactivar la gravedad desde el Rigidbody, dando lugar al siguiente resultado:
 
-![gif](./GIF/sinGravedad.GIF)
+![gif](./GIF/sinGravedad.gif)
 
 
 ## Ejercicio 2
@@ -18,11 +18,11 @@ Duplicando los valores del Vector en X, Y, Z hacemos que la esfera se mueva el d
 
 Valor original:
 
-![gif](./GIF/conGravedad.GIF)
+![gif](./GIF/escalaNormal.gif)
 
 Valor con los vectores duplicados:
 
-![gif](./GIF/conGravedad.GIF)
+![gif](./GIF/escalaDuplicada.gif)
 
 Sin embargo, al usar desde el script el vector normalizado (goal.normalized) solo nos quedamos con la información referente a la dirección del vector sin que afecte el hecho de haber duplicado sus valores de forma que conserva la misma velocidad que el original.
 
