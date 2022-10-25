@@ -42,7 +42,7 @@ Sin embargo, al usar desde el script el vector normalizado (goal.normalized) sol
  ![img](./img/A.PNG)
  
  ### B) Las esfera tiene físicas, el cubo no, pero se puede mover por el controlador en 3ª persona de los starter Assets.
-  -> 
+  -> Al no tener físicas el cubo, este no cae al suelo por no tener gravedad, aparte algunas colisiones ocurren porque el cubo sigue teniendo un Collider, pero las físicas no se calculan del todo bien por lo que a veces se atraviesan las esferas.
  
  ![gif](./GIF/B.gif)
  
