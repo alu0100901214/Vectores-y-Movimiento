@@ -67,7 +67,7 @@ Sin embargo, al usar desde el script el vector normalizado (goal.normalized) sol
  ![gif](./GIF/F.gif)
  
   ### G) Las esferas tienen físicas, el cubo es de tipo IsTrigger y mecánico.
-  -> 
+  -> Al ser IsTrigger el cubo las demas esferas lo atraviesan.
  
  ![gif](./GIF/G.gif)
  
