@@ -42,17 +42,25 @@ Sin embargo, al usar desde el script el vector normalizado (goal.normalized) sol
  
  ## Ejercicio 4
  
+ Para evitar el jittering, establecemos un accuracy:
+ 
   ![gif](./GIF/Ej4.gif)
  
  ## Ejercicio 5
+ 
+ Con el método LookAt en el Start() hacemos que el objeto mire hacia el objetivo, para poder movernos hacia esa dirección, necesitamos hacerlo con el sistema de referencia del mundo con la opción Space.World dentro del Translate:
  
   ![gif](./GIF/Ej5.gif)
  
  ## Ejercicio 6
  
+ Con Debug.DrawRay, podremos dibujar la dirección a la que apunta el vector y verlo activando Gizmos. Aparte para lograr que pare en el objetivo, cambiamos el calculo de la dirección del Start al Update() de forma que cuando llegue a su objetivo, el vector sea (0,0,0) y deje de moverse:
+ 
   ![gif](./GIF/Ej6.gif)
  
  ## Ejercicio 7
+ 
+ Añadimos la posibilidad del jugador de moverse por el escenario y establecemos otro objeto cuyo objetivo es el propio jugador al moverse. De esta forma podemos simular que el objeto nos sigue.
  
   ![gif](./GIF/Ej7.gif)
  
@@ -100,8 +108,24 @@ Sin embargo, al usar desde el script el vector normalizado (goal.normalized) sol
  
   ## Ejercicio 9
  
+ Haciendo uso del Input.GetAxis('Vertical') y Input.GetAxis('Horizontal') podemos hacer que el jugador se mueva hacia adelante y hacia atras o que rote sobre si mismo y cambie la dirección a la que se mueve. Ademas se modifica la velocidad pulsando la barra espaciadora:
+ 
+ ```
+         transform.Translate(0, 0, Input.GetAxis("Vertical") * speed * Time.deltaTime);
+        transform.Rotate(0, Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime, 0);
+
+        if(Input.GetKey(KeyCode.Space)){
+            speed = 12f;
+        }else
+            speed = 6f;
+ ```
+ 
   ![gif](./GIF/Ej9.gif)
   
    ## Ejercicio 10
+ 
+ Cada uno de los Cilindros son Trigger, de forma que contengan un Script con la función OnTriggerEnter(), que detecta las colisiones del jugador al entrar al cilindro. Desde aqui se llama a una función pública del jugador llamado addPoints, donde le pasamos el número de puntos que queremos sumar, tambien cambiamos el color del material accediendo al Renderer del cilindro e imprimimos el nombre.
+ Al salir del cilindro, se activa OnTriggerExit para volver el color del cilindro al original.
+Implemente ademas un Canvas para poder ver el número de puntos en la interfaz del juego.
  
   ![gif](./GIF/Ej10.gif)
