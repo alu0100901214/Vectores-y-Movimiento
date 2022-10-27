@@ -109,7 +109,8 @@ Sin embargo, al usar desde el script el vector normalizado (goal.normalized) sol
   ## Ejercicio 9
  
  Haciendo uso del Input.GetAxis('Vertical') y Input.GetAxis('Horizontal') podemos hacer que el jugador se mueva hacia adelante y hacia atras o que rote sobre si mismo y cambie la dirección a la que se mueve. 
- Ademas se modifica la velocidad pulsando la barra espaciadora:
+
+Ademas se modifica la velocidad pulsando la barra espaciadora:
  
  ```
          transform.Translate(0, 0, Input.GetAxis("Vertical") * speed * Time.deltaTime);
@@ -126,8 +127,11 @@ Sin embargo, al usar desde el script el vector normalizado (goal.normalized) sol
    ## Ejercicio 10
  
  Cada uno de los Cilindros son Trigger, de forma que contengan un Script con la función OnTriggerEnter(), que detecta las colisiones del jugador al entrar al cilindro.
- Desde aqui se llama a una función pública del jugador llamado addPoints, donde le pasamos el número de puntos que queremos sumar, tambien cambiamos el color del material accediendo al Renderer del cilindro e imprimimos el nombre.
+
+Desde aqui se llama a una función pública del jugador llamado addPoints, donde le pasamos el número de puntos que queremos sumar, tambien cambiamos el color del material accediendo al Renderer del cilindro e imprimimos el nombre.
+ 
  Al salir del cilindro, se activa OnTriggerExit para volver el color del cilindro al original.
+
 Implemente ademas un Canvas para poder ver el número de puntos en la interfaz del juego.
  
   ![gif](./GIF/Ej10.gif)
