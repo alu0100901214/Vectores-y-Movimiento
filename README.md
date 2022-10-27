@@ -89,17 +89,17 @@ Sin embargo, al usar desde el script el vector normalizado (goal.normalized) sol
   ### E) Las esferas tienen físicas y el cubo es de tipo IsTrigger estático.
   -> Al activar el isTrigger del cubo, este posee las físicas del rigidBody, pero ya no es afectado por el resto de objetos y los atraviesa. La intención del isTrigger   aqui es para que se use como detector de colisiones con otros objetos.
  
- ![gif](./GIF/E.gif)
+ ![gif](./GIF/Ej8E.gif)
  
   ### F) Las esferas tienen físicas, el cubo es de tipo IsTrigger y cinemático.
   -> Al activar is Kinematic, el cubo ya no es afectado por ninguna de las físicas a pesar de tener un rigidBody, el objeto solo se podra mover con el uso de un      script.
  
- ![gif](./GIF/F.gif)
+ ![gif](./GIF/Ej8F.gif)
  
   ### G) Las esferas tienen físicas, el cubo es de tipo IsTrigger y mecánico.
   -> Al ser IsTrigger el cubo las demas esferas lo atraviesan.
  
- ![gif](./GIF/G.gif)
+ ![gif](./GIF/Ej8G.gif)
  
   ### H) Una esfera y el cubo son físicos y la esfera tiene 10 veces la masa del cubo, se impide la rotación del cubo sobre el plano XZ.
   -> Al bloquear las rotaciones en el plano XZ, el cubo se mantiene sobre la esfera y no puede caerse al no poder rotar.
