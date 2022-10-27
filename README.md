@@ -34,6 +34,28 @@ Sin embargo, al usar desde el script el vector normalizado (goal.normalized) sol
  t.Translate(goal.normalized * Time.deltaTime * speed);
  ```
  
+ ## Ejercicio 3
+ 
+ Restando la posición del objetivo con la posición del objeto a mover, podemos calcular el vector entre estos dos y moverlo en esa dirección:
+ 
+ ![gif](./GIF/Ej3.gif)
+ 
+ ## Ejercicio 4
+ 
+  ![gif](./GIF/Ej4.gif)
+ 
+ ## Ejercicio 5
+ 
+  ![gif](./GIF/Ej5.gif)
+ 
+ ## Ejercicio 6
+ 
+  ![gif](./GIF/Ej6.gif)
+ 
+ ## Ejercicio 7
+ 
+  ![gif](./GIF/Ej7.gif)
+ 
  ## Ejercicio 8
  
  ### A) Ninguno de los objetos es físico.
@@ -75,3 +97,11 @@ Sin embargo, al usar desde el script el vector normalizado (goal.normalized) sol
   -> Al bloquear las rotaciones en el plano XZ, el cubo se mantiene sobre la esfera y no puede caerse al no poder rotar.
  
  ![gif](./GIF/H.gif)
+ 
+  ## Ejercicio 9
+ 
+  ![gif](./GIF/Ej9.gif)
+  
+   ## Ejercicio 10
+ 
+  ![gif](./GIF/Ej10.gif)
