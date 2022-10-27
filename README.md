@@ -86,18 +86,18 @@ Sin embargo, al usar desde el script el vector normalizado (goal.normalized) sol
  
  ![gif](./GIF/D.gif)
  
-  ### E) Las esferas tienen físicas y el cubo es de tipo IsTrigger estático.
-  -> Al activar el isTrigger del cubo, este posee las físicas del rigidBody, pero ya no es afectado por el resto de objetos y los atraviesa. La intención del isTrigger   aqui es para que se use como detector de colisiones con otros objetos.
+  ### E) Las esferas tienen físicas y el cubo es de tipo IsTrigger estático (Static).
+  -> El cubo es Estático, es decir, que solo lleva un Collider, la esfera debería parar encima del cubo, pero como tiene activado la opción is Trigger, termina atravesandolo.
  
  ![gif](./GIF/Ej8E.gif)
  
-  ### F) Las esferas tienen físicas, el cubo es de tipo IsTrigger y cinemático.
-  -> Al activar is Kinematic, el cubo ya no es afectado por ninguna de las físicas a pesar de tener un rigidBody, el objeto solo se podra mover con el uso de un      script.
+  ### F) Las esferas tienen físicas, el cubo es de tipo IsTrigger y cinemático (Kinematic).
+  -> El cubo es Cinemático, es decir, tiene rigidBody, Collider y tiene activo la opción isKinematic. Normalmente deberia parar la esfera encima del cubo, pero como tiene activado la opción is Trigger, termina atravesandolo.
  
  ![gif](./GIF/Ej8F.gif)
  
-  ### G) Las esferas tienen físicas, el cubo es de tipo IsTrigger y mecánico.
-  -> Al ser IsTrigger el cubo las demas esferas lo atraviesan.
+  ### G) Las esferas tienen físicas, el cubo es de tipo IsTrigger y mecánico (Dynamic).
+  -> El cubo es Dinamico, es decir, tiene rigidBody, Collider pero no tiene activo la opción isKinematic. Como el cubo tiene activado tambien la opción is Trigger, este cae (por el rigird body) y atraviesa las esferas.
  
  ![gif](./GIF/Ej8G.gif)
  
